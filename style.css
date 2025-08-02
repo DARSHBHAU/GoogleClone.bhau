@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    /* Moves nav to the right */
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* spacing between items */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links svg {
+    fill: white;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.nav-links svg:hover {
+    background: #5a5a5a;
+    cursor: pointer;
+}
+
+.labs {
+    width: 28px;
+    height: 28px;
+}
+
+.g-apps {
+    width: 28px;
+    height: 28px;
+}
+
+.content {
+    margin-bottom: -2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 80px;
+}
+
+.search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 40rem;
+    /* ensures it doesn't overflow */
+}
+
+
+.search-bar img {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+}
+
+.inp-1 {
+    width: 75%;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    padding-left: 48px;
+    padding-right: 115px;
+    /* ensures text doesn't go under buttons */
+    font-size: 16px;
+}
+
+
+
+#cam {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    /* enough space from the right */
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-size: 60%;
+    background-image: url(assets/camera.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#voice-search {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    /* stays at far right */
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-size: 60%;
+    background-image: url(assets/mic.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 10rem;
+}
+
+.home-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 3rem;
+    gap: 16px;
+}
+
+.title {
+    text-decoration: none;
+    color: white;
+}
+
+.icon-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(68, 71, 70, 1.00);
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.app {
+    padding: 12px;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    text-decoration: none; /* Prevent underline */
+    color: inherit; /* Inherit text color */
+}
+
+.app:hover {
+    background-color: rgb(78, 78, 78);
+}
+
+
+.links {
+    text-decoration: none;
+}
+
+.custom-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 2rem;
+    width: 10.5rem;
+    background-color: #004a77;
+    border: none;
+    color: white;
+    padding: 8px 8px 6px 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 1px 2px;
+        border-radius: 30px;
+        cursor: pointer;
+}
+
+.custom-btn:hover {
+    background-color: #0075be;
+}
